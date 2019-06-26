@@ -8,39 +8,51 @@ public class Interact_J : MonoBehaviour {
 
     public string interactButtonName;
     public Image handIcon;
-    public float armDistance = 2.4f;
+    public float armDistance = 3f;
     public LayerMask interactLayer;
-    public bool isInteracting;
-
-
+    public static bool isInteracting = false;
 
 	// Use this for initialization
 	void Start () {
-        Cursor.visible = false;
         if (handIcon == null)
         {
             Debug.Log("No hand icon");
         }
         else handIcon.enabled = false;
-            //Cursor.SetCursor(handIcon, Vector2.zero, CursorMode.Auto);      
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        Debug.Log("interactButtonName " + interactButtonName);
+        Debug.Log("interactLayer " + interactLayer);
+        //Cursor.SetCursor(handIcon, Vector2.zero, CursorMode.Auto);      
+    }
+
+    // Update is called once per frame
+    void Update () {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, armDistance, interactLayer))
         {
-            if (isInteracting == false)
+            Debug.Log("Got a hit with tag " + hit.collider.tag);
+            Debug.Log("isInteracting " + isInteracting);
+
+            if (!isInteracting)
             {
                 handIcon.enabled = true;
             }
 
             if (Input.GetButtonDown(interactButtonName))
             {
+                Debug.Log("InteractButton pressed" + interactButtonName);
+
                 if (hit.collider.CompareTag("Note"))
                 {
+
                     hit.collider.GetComponent<Readable_J>().PickUpReadable();
+                    isInteracting = true;
                 }
                 /*                if (hit.collider.CompareTag("Door"))
                                 {
