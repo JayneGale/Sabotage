@@ -297,10 +297,10 @@ InputManager:
     m_Name: Interact
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: r
     positiveButton: e
-    altNegativeButton: 
-    altPositiveButton: 
+    altNegativeButton: mouse 1
+    altPositiveButton: mouse 0
     gravity: 1000
     dead: 0.001
     sensitivity: 1000

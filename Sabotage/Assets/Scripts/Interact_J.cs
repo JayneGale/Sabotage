@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Interact_J : MonoBehaviour {
+public class Interact_J : MonoBehaviour
+{
 
     public string interactButtonName;
     public Image handIcon;
@@ -13,19 +15,19 @@ public class Interact_J : MonoBehaviour {
     public static bool isInteracting = false;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         if (handIcon == null)
         {
             Debug.Log("No hand icon");
         }
         else handIcon.enabled = false;
-        Debug.Log("interactButtonName " + interactButtonName);
-        Debug.Log("interactLayer " + interactLayer);
-        //Cursor.SetCursor(handIcon, Vector2.zero, CursorMode.Auto);      
-    }
+        //Cursor.SetCursor(handIcon, Vector2.zero, CursorMode.Auto);    
+            }
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.lockState = CursorLockMode.None;
@@ -36,9 +38,6 @@ public class Interact_J : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, armDistance, interactLayer))
         {
-            Debug.Log("Got a hit with tag " + hit.collider.tag);
-            Debug.Log("isInteracting " + isInteracting);
-
             if (!isInteracting)
             {
                 handIcon.enabled = true;
@@ -46,27 +45,23 @@ public class Interact_J : MonoBehaviour {
 
             if (Input.GetButtonDown(interactButtonName))
             {
-                Debug.Log("InteractButton pressed" + interactButtonName);
-
-                if (hit.collider.CompareTag("Note"))
+                Debug.Log("Got a hit with tag " + hit.collider.tag);
+                if (hit.collider.CompareTag("Note")|| hit.collider.CompareTag("Book"))
                 {
-
                     hit.collider.GetComponent<Readable_J>().PickUpReadable();
                     isInteracting = true;
                 }
-                /*                if (hit.collider.CompareTag("Door"))
-                                {
-                                    hit.collider.GetComponent<Door>().ChangeDoorState();
-                                }
-                */
-                /*                if (hit.collider.CompareTag("Key"))
-                                {
-                                    hit.collider.GetComponent<Key>().Unlock();
-                                }
-                */
-
+                if (hit.collider.CompareTag("Door") || hit.collider.CompareTag("Drawer"))
+                {
+                    hit.collider.GetComponent<Openable>().OpenAndClose();
+                }
+               
+                if (hit.collider.CompareTag("Key") || hit.collider.CompareTag("Crystal"))
+                {
+                    Debug.Log("Pick Up Key or Crystal");
+//                    hit.collider.GetComponent<PickUpAlbe>().PickUp();
+                }
             }
-
         }
         else
         {

@@ -7,6 +7,10 @@ TagManager:
   - Note
   - Book
   - Handle
+  - Door
+  - Drawer
+  - Key
+  - Crystal
   layers:
   - Default
   - TransparentFX
