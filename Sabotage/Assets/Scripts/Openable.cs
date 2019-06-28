@@ -13,6 +13,8 @@ public class Openable : MonoBehaviour
     public List<GameObject> unlockOnceInteracted = new List<GameObject>(); //list of gameobjects to be interacted with before the door/drawer unlocks
     Material material;
     int listCount;
+    AudioManager AM;
+
 
     void Start()
     {
@@ -27,6 +29,7 @@ public class Openable : MonoBehaviour
         }
 
         else material.color = Color.red;
+        AM = FindObjectOfType<AudioManager>();
     }
 
     void FixedUpdate()
@@ -47,9 +50,12 @@ public class Openable : MonoBehaviour
                 isLocked = false;
                 if (CompareTag("Drawer"))
                 {
-                    Debug.Log("Play drawer unlock Audioclip " + name);
+                    AM.Play("Drawer_Unlock");
                 }
-                else Debug.Log("Play door unlock Audioclip " + name);
+                else
+                {
+                    AM.Play("Door_Unlock");
+                }
                 material.color = Color.green;
             }
         }
@@ -68,26 +74,43 @@ public class Openable : MonoBehaviour
             {
                 if (CompareTag("Drawer"))
                 {
-                    Debug.Log("Play drawer close animation and audioclip");
+                    Debug.Log("Play drawer close animation " + name);
+                    AM.Play("Drawer_Close");
                 }
-                else Debug.Log("Play door close animation and audioclip " + name);
+                else
+                {
+                    Debug.Log("Play door close animation" + name);
+                   AM.Play("Door_Close");
+                }
             }
 
             if (!isClosed)
             {
                 if (CompareTag("Drawer"))
                 {
-                    Debug.Log("Play drawer open animation and audiociip");
+                    Debug.Log("Play drawer open animation " + name);
+                    AM.Play("Drawer_Open");
                 }
-                else Debug.Log("Play door open animation and audioclip");
-                //play door open or close animation and audioclip
+                else
+                {
+                    Debug.Log("Play door open animation " + name);
+                 AM.Play("Door_Open");
+                }
             }
         }
 
-        else
+        else                 //the door is locked, make it rattle
         {
-            Debug.Log("Play door Locked rattle Audioclip");
-        }
+            if (CompareTag("Drawer"))
+            {
+               AM.Play("DrawerLocked_Rattle_1");
+            }
+            else
+            {
+                AM.Play("DoorLocked_Rattle");
+            }
 
+        }
+        
     }
 }

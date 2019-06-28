@@ -13,14 +13,15 @@ public class Readable_J : MonoBehaviour
     FirstPersonController playerController;
     [HideInInspector]
     public bool hasInteracted = false;
-    
-	// Use this for initialization
-	void Start ()
+    AudioManager AM;
+    // Use this for initialization
+    void Start ()
     {
         readable2D.SetActive(false);
         closeImage.SetActive(false);
         player = GameObject.FindWithTag("Player"); 
-        playerController = player.GetComponent<FirstPersonController>();      
+        playerController = player.GetComponent<FirstPersonController>();
+        AM = FindObjectOfType<AudioManager>();
     }
 
     public void PickUpReadable()
@@ -28,6 +29,15 @@ public class Readable_J : MonoBehaviour
         gameObject.SetActive(false);
         readable2D.SetActive(true);
         closeImage.SetActive(true);
+        if (CompareTag("Note"))
+        {
+            AM.Play("Note_PickUp");
+        }
+        else
+        {
+            AM.Play("Book_PickUp");
+        }
+
         playerController.enabled = false;    
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;       
@@ -38,6 +48,15 @@ public class Readable_J : MonoBehaviour
         gameObject.SetActive(true);
         readable2D.SetActive(false);
         closeImage.SetActive(false);
+        if (CompareTag("Note"))
+        {
+            AM.Play("Note_PutDown");
+        }
+        else
+        {
+            AM.Play("Book_PutDown");
+        }
+
         playerController.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
