@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1902
-    y: 101
+    x: 2051
+    y: 142
     width: 1904
     height: 1069
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1904
     height: 1069
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 785, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 651
+  controlID: 9
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 510, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 652
+  controlID: 10
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_MinSize: {x: 510, y: 221}
   m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
-  controlID: 653
+  controlID: 11
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_MinSize: {x: 334, y: 271}
   m_MaxSize: {x: 14004, y: 10021}
   vertical: 0
-  controlID: 618
+  controlID: 88
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -357,8 +357,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2177
-    y: 150
+    x: 2326
+    y: 191
     width: 985
     height: 605
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -436,8 +436,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1902
-    y: 150
+    x: 2051
+    y: 191
     width: 271
     height: 605
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -540,16 +540,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3166
-    y: 150
+    x: 1264
+    y: 19
     width: 201
     height: 605
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 4}
-    m_SelectedIDs: 2a660000
+    m_SelectedIDs: 70630000
     m_LastClickedID: 0
-    m_ExpandedIDs: 6a1affff00000000
+    m_ExpandedIDs: 2a4dffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,8 +593,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1902
-    y: 776
+    x: 2051
+    y: 817
     width: 974
     height: 372
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -618,8 +618,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2880
-    y: 776
+    x: 3029
+    y: 817
     width: 487
     height: 372
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -647,7 +647,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: 1a2e0000
     m_LastClickedID: 11802
-    m_ExpandedIDs: ffffffff000000005c390000183a0000ac3a0000163d00001c3d00006a3d00007a3d0000fc5f0000ce610000f26100005a640000006500004e6500003466000052660000886600008e660000d86600008a670000ae670000e8670000106800001c6800008a680000c4680000506900005a690000646a0000966a0000546f0000
+    m_ExpandedIDs: 0000000042390000d8390000503a00003e3c0000443c00008c3c00009c3c0000dc5d0000ba600000c260000084610000d8610000e8610000fe620000266300006a63000070630000d2630000b0640000de64000022650000506500005c650000e46500002a660000d6660000e26600002868000064680000c46d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -675,21 +675,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000005c390000183a0000ac3a0000163d00001c3d00006a3d00007a3d0000fc5f0000ce610000f26100005a640000006500004e6500003466000052660000886600008e660000d86600008a670000ae670000e8670000106800001c6800008a680000c4680000506900005a690000646a0000966a0000546f0000
+    m_ExpandedIDs: ffffffff0000000042390000d8390000503a00003e3c0000443c00008c3c00009c3c0000dc5d0000ba600000c260000084610000d8610000e8610000266300006a630000d2630000b0640000de64000022650000506500005c650000e46500002a660000d6660000e26600002868000064680000c46d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Book_TurnPage 63318__flag2__page-turn-please-turn-over-pto-paper-turn-over
+      m_OriginalName: Book_TurnPage 63318__flag2__page-turn-please-turn-over-pto-paper-turn-over
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 28138
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_SearchString: 
@@ -750,8 +750,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3371
-    y: 150
+    x: 1469
+    y: 19
     width: 435
     height: 998
   m_PersistentViewDataDictionary: {fileID: 0}
