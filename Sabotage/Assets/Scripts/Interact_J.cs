@@ -59,7 +59,7 @@ public class Interact_J : MonoBehaviour
                 if (hit.collider.CompareTag("Key") || hit.collider.CompareTag("Crystal"))
                 {
                     Debug.Log("Pick Up Key or Crystal");
-//                    hit.collider.GetComponent<PickUpAlbe>().PickUp();
+                    hit.collider.GetComponent<PickUpAble>().PickUp();
                 }
             }
         }

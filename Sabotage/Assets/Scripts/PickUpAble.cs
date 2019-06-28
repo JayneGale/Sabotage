@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PickUpAble : MonoBehaviour {
     AudioManager AM;
-    // Use this for initialization
     void Start () {
         AM = FindObjectOfType<AudioManager>();
-
     }
 
-    // Update is called once per frame
-    void Update () {
-//        AM.Play("CrystalKey_Pickup");
-
+    public void PickUp()
+    {
+        Debug.Log("Pickup called on" + name);
+        if (CompareTag("Key") || CompareTag("Crystal"))
+        {
+            AM.Play("CrystalKey_Pickup");
+            gameObject.SetActive(false);
+        }
+        else AM.Play("Note_PutDown2");
     }
 }

@@ -80,12 +80,13 @@ public class Openable : MonoBehaviour
                 else
                 {
                     Debug.Log("Play door close animation" + name);
-                   AM.Play("Door_Close");
+                    AM.Play("Door_Close");
                 }
             }
 
             if (!isClosed)
             {
+                isClosed = !isClosed;
                 if (CompareTag("Drawer"))
                 {
                     Debug.Log("Play drawer open animation " + name);
@@ -94,7 +95,7 @@ public class Openable : MonoBehaviour
                 else
                 {
                     Debug.Log("Play door open animation " + name);
-                 AM.Play("Door_Open");
+                    AM.Play("Door_Open");
                 }
             }
         }

@@ -31,7 +31,7 @@ public class Readable_J : MonoBehaviour
         closeImage.SetActive(true);
         if (CompareTag("Note"))
         {
-            AM.Play("Note_PickUp");
+            AM.Play("Note_PickUp2");
         }
         else
         {

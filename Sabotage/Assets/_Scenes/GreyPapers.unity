@@ -625,7 +625,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 87eca7fbaf5cb05409381f858763b7ba, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.617
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -982,9 +982,9 @@ MonoBehaviour:
   - name: Book_Close
     clip: {fileID: 8300000, guid: fc9c1ef3f3709094fb1725397330933d, type: 3}
     volume: 0.5
-    volumeVariance: 0
+    volumeVariance: 0.208
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.15
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -1000,9 +1000,9 @@ MonoBehaviour:
   - name: Door_Unlock
     clip: {fileID: 8300000, guid: 33fc7fc476a1e9a449e61d8cf01f0f10, type: 3}
     volume: 0.5
-    volumeVariance: 0
+    volumeVariance: 0.145
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.139
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -1017,7 +1017,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: DoorLocked_Rattle
     clip: {fileID: 8300000, guid: c4c89273c5aa1e94592896b13a1e07da, type: 3}
-    volume: 0.5
+    volume: 0.6
     volumeVariance: 0.129
     pitch: 1
     pitchVariance: 0.139
@@ -1044,7 +1044,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Drawer_Close
     clip: {fileID: 8300000, guid: 4db8fcbec0623d748beb5b80c819fb59, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.108
     pitch: 1
     pitchVariance: 0.103
@@ -1053,7 +1053,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Drawer_Open
     clip: {fileID: 8300000, guid: 5cba5421f45da2a4b8e66a0dc1922d8f, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.139
     pitch: 1
     pitchVariance: 0.118
@@ -1062,16 +1062,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Drawer_Unlock
     clip: {fileID: 8300000, guid: 06ea2284e24873742a3a3fc439e24a10, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.171
-    pitch: 0.72
+    pitch: 1
     pitchVariance: 0.061
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Drawer_Lock
     clip: {fileID: 8300000, guid: 47708306ede9fcd4cbbb7e36a2f42dee, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.1
     pitch: 1
     pitchVariance: 0.1
@@ -1080,16 +1080,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: DrawerLocked_Rattle_1
     clip: {fileID: 8300000, guid: 9e6a209ef2e80e34599f020def486d27, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.1
     pitch: 1
-    pitchVariance: 0.1
+    pitchVariance: 0.218
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: DrawerLocked_Rattle_2
     clip: {fileID: 8300000, guid: 09011b694effa664a99254aabb3a5c5c, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.2
     pitch: 1
     pitchVariance: 0.2
@@ -1098,9 +1098,9 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Book_PutDown
     clip: {fileID: 8300000, guid: fc9c1ef3f3709094fb1725397330933d, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.2
-    pitch: 0
+    pitch: 1
     pitchVariance: 0.2
     loop: 0
     mixerGroup: {fileID: 0}
@@ -1116,6 +1116,60 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CrystalKey_Pickup
     clip: {fileID: 8300000, guid: 47527886a1434a54589ebc746f76c5f8, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Book_TurnPage
+    clip: {fileID: 8300000, guid: 4b6f631c3e5cd964197ef7df7834255a, type: 3}
+    volume: 0.7
+    volumeVariance: 0.412
+    pitch: 1
+    pitchVariance: 0.375
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Tinkling
+    clip: {fileID: 8300000, guid: 87eca7fbaf5cb05409381f858763b7ba, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PickUp
+    clip: {fileID: 8300000, guid: 8e09e912152e30148a67b0c5e236d62b, type: 3}
+    volume: 0.7
+    volumeVariance: 0.115
+    pitch: 1
+    pitchVariance: 0.16
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PutDown
+    clip: {fileID: 8300000, guid: c050374d43755794ba5951096183345e, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PickUp2
+    clip: {fileID: 8300000, guid: d1cc6b1adcf73964c89367e4602e2bd0, type: 3}
+    volume: 0.5
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PutDown2
+    clip: {fileID: 8300000, guid: eaa0aae8eb64ee845b191132381bb524, type: 3}
     volume: 0.5
     volumeVariance: 0.2
     pitch: 1
@@ -1125,64 +1179,37 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Book_TurnPage
     clip: {fileID: 8300000, guid: 4b6f631c3e5cd964197ef7df7834255a, type: 3}
-    volume: 0.5
+    volume: 0.7
     volumeVariance: 0.2
-    pitch: 0
+    pitch: 1
     pitchVariance: 0.2
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: Tinkling
-    clip: {fileID: 8300000, guid: 87eca7fbaf5cb05409381f858763b7ba, type: 3}
-    volume: 0.5
+  - name: Arrival
+    clip: {fileID: 8300000, guid: 84a025cb00c668248888c6e3f6b7fa4b, type: 3}
+    volume: 0.6
     volumeVariance: 0.2
-    pitch: 0
+    pitch: 1
     pitchVariance: 0.2
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: Note_PickUp
-    clip: {fileID: 8300000, guid: 8e09e912152e30148a67b0c5e236d62b, type: 3}
-    volume: 0.5
-    volumeVariance: 0.115
-    pitch: 0.94
-    pitchVariance: 0.16
-    loop: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Note_PutDown
-    clip: {fileID: 8300000, guid: c050374d43755794ba5951096183345e, type: 3}
-    volume: 0.5
+  - name: Door_Open
+    clip: {fileID: 8300000, guid: d2c3006b1cdf72c4c87ff6e4a35673f1, type: 3}
+    volume: 0.7
     volumeVariance: 0.2
-    pitch: 0
+    pitch: 1
     pitchVariance: 0.2
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: Note_PickUp2
-    clip: {fileID: 8300000, guid: d1cc6b1adcf73964c89367e4602e2bd0, type: 3}
-    volume: 0.5
+  - name: Door_Close
+    clip: {fileID: 8300000, guid: fe84c6db61836ba4694fe26daae0abcc, type: 3}
+    volume: 0.7
     volumeVariance: 0.2
-    pitch: 0
+    pitch: 1
     pitchVariance: 0.2
-    loop: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Note_PutDown2
-    clip: {fileID: 8300000, guid: eaa0aae8eb64ee845b191132381bb524, type: 3}
-    volume: 0.5
-    volumeVariance: 0.2
-    pitch: 0
-    pitchVariance: 0.2
-    loop: 0
-    mixerGroup: {fileID: 0}
-    source: {fileID: 0}
-  - name: Book_TurnPage
-    clip: {fileID: 8300000, guid: 4b6f631c3e5cd964197ef7df7834255a, type: 3}
-    volume: 0
-    volumeVariance: 0
-    pitch: 0
-    pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -1601,7 +1628,7 @@ RectTransform:
   m_Children:
   - {fileID: 1933486567}
   m_Father: {fileID: 1855779047}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1642,6 +1669,35 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 267987880}
   m_CullTransparentMesh: 0
+--- !u!1 &304287134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 63c080a45c5b025469ff9485dd9356e7,
+    type: 3}
+  m_PrefabInternal: {fileID: 1761905950}
+--- !u!114 &304287138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 304287134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08cf574b24c0a7f4ebbec5c9510917b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &304287139
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 304287134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 7.7632027
+  m_Height: 15.526405
+  m_Direction: 1
+  m_Center: {x: 6.2831616, y: 0.00000023841858, z: 0.00000023841858}
 --- !u!1001 &323211744
 Prefab:
   m_ObjectHideFlags: 0
@@ -1757,6 +1813,17 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1534496123}
+        m_MethodName: PutBackReadable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2116659262}
         m_MethodName: PutBackReadable
         m_Mode: 1
         m_Arguments:
@@ -3640,6 +3707,24 @@ Transform:
   m_Father: {fileID: 1295863945}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0.10300001, y: 31.599, z: 164.19801}
+--- !u!1 &825321220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2093418362}
+--- !u!136 &825321226
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825321220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &840654865
 Prefab:
   m_ObjectHideFlags: 0
@@ -4299,6 +4384,7 @@ GameObject:
   - component: {fileID: 1005594438}
   - component: {fileID: 1005594437}
   - component: {fileID: 1005594436}
+  - component: {fileID: 1005594440}
   m_Layer: 0
   m_Name: DoorCollider Player To Room
   m_TagString: Untagged
@@ -4373,6 +4459,17 @@ Transform:
   m_Father: {fileID: 870993964}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 90}
+--- !u!114 &1005594440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005594435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967ae9c0a5400294899cdeae375a419c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1024506754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4387,7 +4484,7 @@ GameObject:
   - component: {fileID: 1024506759}
   m_Layer: 9
   m_Name: Door Knob Light (2)
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4666,7 +4763,7 @@ RectTransform:
   m_Children:
   - {fileID: 416926197}
   m_Father: {fileID: 1855779047}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7159,11 +7256,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 9826571d501060a4f8ce10f31c27889f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.44
+      value: -1.4407
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9826571d501060a4f8ce10f31c27889f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.992
+      value: 0.969
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9826571d501060a4f8ce10f31c27889f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7191,15 +7288,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9826571d501060a4f8ce10f31c27889f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9826571d501060a4f8ce10f31c27889f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.7774242
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9826571d501060a4f8ce10f31c27889f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 9826571d501060a4f8ce10f31c27889f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7744,9 +7841,9 @@ RectTransform:
   m_Children:
   - {fileID: 863642850}
   - {fileID: 1227861982}
-  - {fileID: 107534174}
   - {fileID: 1109854927}
   - {fileID: 267987881}
+  - {fileID: 107534174}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7837,6 +7934,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08cf574b24c0a7f4ebbec5c9510917b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1896988157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1896988152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.408167, y: 7.53279, z: 3.5548627}
+  m_Center: {x: 6.2831616, y: 0.00000023841858, z: 0.00000023841858}
 --- !u!1001 &1901522303
 Prefab:
   m_ObjectHideFlags: 0
@@ -7846,7 +7955,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22443772, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: m_LocalPosition.x
@@ -7878,7 +7987,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22443772, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22443772, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -7927,10 +8036,6 @@ Prefab:
     - target: {fileID: 22406382, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22425882, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 22437570, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: m_SizeDelta.x
@@ -7985,38 +8090,6 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 39d656cfc61779645a323df31e4664c0,
         type: 3}
-    - target: {fileID: 22447500, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5806237
-      objectReference: {fileID: 0}
-    - target: {fileID: 22447500, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.73748434
-      objectReference: {fileID: 0}
-    - target: {fileID: 22447500, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: -63
-      objectReference: {fileID: 0}
-    - target: {fileID: 22447500, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -140
-      objectReference: {fileID: 0}
-    - target: {fileID: 22407488, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.629
-      objectReference: {fileID: 0}
-    - target: {fileID: 22407488, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -109
-      objectReference: {fileID: 0}
-    - target: {fileID: 22407488, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.45900002
-      objectReference: {fileID: 0}
-    - target: {fileID: 22407488, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: -78
-      objectReference: {fileID: 0}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: currentPage
       value: 2
@@ -8036,7 +8109,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
       propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -8077,6 +8150,102 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 22a77756915f9cc4db4a2ababfdc955e,
         type: 3}
+    - target: {fileID: 22436914, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22436914, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448524, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_ShowMaskGraphic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437570, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -114.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437570, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 22436914, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 22406382, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22485034, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437570, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22447500, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 22407488, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 22447776, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22436914, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22436914, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22436914, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22433904, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -112.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 22488492, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 22436914, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425334, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22425882, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 146454512}
+    - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415212, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
+      propertyPath: OnFlip.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Book_TurnPage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 2}
   m_IsPrefabAsset: 0
