@@ -30,6 +30,7 @@ public class Interact_J : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Application.Quit();
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }

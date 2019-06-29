@@ -7,6 +7,8 @@ public class Openable : MonoBehaviour
 {
     public bool startLocked;
     public bool startClosed;
+    public GameObject door;
+    MeshRenderer doorRend;
     [HideInInspector]
     public bool isLocked;
     bool isClosed;
@@ -22,6 +24,7 @@ public class Openable : MonoBehaviour
         isClosed = startClosed;
         listCount = unlockOnceInteracted.Count;
         Debug.Log("List size is " + listCount);
+        doorRend = door.GetComponent<MeshRenderer>();
         material = GetComponent<Renderer>().material;
         if (!isLocked)
         {
@@ -81,6 +84,9 @@ public class Openable : MonoBehaviour
                 {
                     Debug.Log("Play door close animation" + name);
                     AM.Play("Door_Close");
+                    doorRend.enabled = true;
+                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+
                 }
             }
 
@@ -96,6 +102,9 @@ public class Openable : MonoBehaviour
                 {
                     Debug.Log("Play door open animation " + name);
                     AM.Play("Door_Open");
+                    doorRend.enabled = false;
+                    gameObject.GetComponent<MeshRenderer>().enabled = false;
+
                 }
             }
         }
