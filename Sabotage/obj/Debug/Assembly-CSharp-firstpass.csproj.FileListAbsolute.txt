@@ -336,5 +336,3 @@ D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp-firstpass.csproj.C
 D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp-firstpass.dll
 D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp-firstpass.pdb
-D:\932400056\Documents\Git\Sabotage\Sabotage\Temp\bin\Debug\UnityEditor.UI.dll
-D:\932400056\Documents\Git\Sabotage\Sabotage\Temp\bin\Debug\UnityEditor.UI.xml

@@ -31,12 +31,11 @@ public class AudioManager : MonoBehaviour
 
             s.source.outputAudioMixerGroup = mixerGroup;
         }
-        Play("Arrival");
 
     }
     void Start()
     {
-        Play("Glass_Crash");
+        Play("Arrival");
     }
 
 

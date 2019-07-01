@@ -21,6 +21,7 @@ public class CloseDoorOnExit : MonoBehaviour
             doorRend.enabled = true;
             gameObject.GetComponent <MeshRenderer>().enabled=true;
             AM.Play("Door_Close");
+            AM.Play("Welcome");
         }    
     }
 }

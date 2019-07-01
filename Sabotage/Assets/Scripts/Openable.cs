@@ -118,6 +118,7 @@ public class Openable : MonoBehaviour
             else
             {
                 AM.Play("DoorLocked_Rattle");
+                AM.Play("TakeCarryOn");
             }
 
         }
