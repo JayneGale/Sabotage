@@ -1,0 +1,307 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1010188074775168}
+  m_IsPrefabAsset: 1
+--- !u!1 &1010188074775168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4924322822719868}
+  - component: {fileID: 114913294907269976}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4924322822719868
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1010188074775168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114913294907269976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1010188074775168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7889a0efc52687042bf795f9a31edb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
+  sounds:
+  - name: Book_Open
+    clip: {fileID: 8300000, guid: b075b72803eeda44b9d41d27e01c5a24, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Book_Close
+    clip: {fileID: 8300000, guid: fc9c1ef3f3709094fb1725397330933d, type: 3}
+    volume: 0.5
+    volumeVariance: 0.208
+    pitch: 1
+    pitchVariance: 0.15
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Book_PickUp
+    clip: {fileID: 8300000, guid: 83654b7d982be784ab606831207ac101, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Door_Unlock
+    clip: {fileID: 8300000, guid: 33fc7fc476a1e9a449e61d8cf01f0f10, type: 3}
+    volume: 0.5
+    volumeVariance: 0.145
+    pitch: 1
+    pitchVariance: 0.139
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Door_Lock
+    clip: {fileID: 8300000, guid: ffc505f1082ec8341bd9492d3c505dac, type: 3}
+    volume: 0.5
+    volumeVariance: 0.066
+    pitch: 1
+    pitchVariance: 0.155
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DoorLocked_Rattle
+    clip: {fileID: 8300000, guid: c4c89273c5aa1e94592896b13a1e07da, type: 3}
+    volume: 0.6
+    volumeVariance: 0.129
+    pitch: 1
+    pitchVariance: 0.139
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: NB_Arrivals
+    clip: {fileID: 8300000, guid: b883c227b80ce2647805b1bb8f2b28b5, type: 3}
+    volume: 0.5
+    volumeVariance: 0.129
+    pitch: 1
+    pitchVariance: 0.145
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: TakeCarryOn
+    clip: {fileID: 8300000, guid: dcc73b4afa720be49ae427d9e1919c90, type: 3}
+    volume: 0.5
+    volumeVariance: 0.176
+    pitch: 1
+    pitchVariance: 0.145
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Drawer_Close
+    clip: {fileID: 8300000, guid: 4db8fcbec0623d748beb5b80c819fb59, type: 3}
+    volume: 0.7
+    volumeVariance: 0.108
+    pitch: 1
+    pitchVariance: 0.103
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Drawer_Open
+    clip: {fileID: 8300000, guid: 5cba5421f45da2a4b8e66a0dc1922d8f, type: 3}
+    volume: 0.7
+    volumeVariance: 0.139
+    pitch: 1
+    pitchVariance: 0.118
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Drawer_Unlock
+    clip: {fileID: 8300000, guid: 06ea2284e24873742a3a3fc439e24a10, type: 3}
+    volume: 0.7
+    volumeVariance: 0.171
+    pitch: 1
+    pitchVariance: 0.061
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Drawer_Lock
+    clip: {fileID: 8300000, guid: 47708306ede9fcd4cbbb7e36a2f42dee, type: 3}
+    volume: 0.7
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DrawerLocked_Rattle_1
+    clip: {fileID: 8300000, guid: 9e6a209ef2e80e34599f020def486d27, type: 3}
+    volume: 0.7
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.218
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: DrawerLocked_Rattle_2
+    clip: {fileID: 8300000, guid: 09011b694effa664a99254aabb3a5c5c, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Book_PutDown
+    clip: {fileID: 8300000, guid: fc9c1ef3f3709094fb1725397330933d, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: CrystalKey_PutDown
+    clip: {fileID: 8300000, guid: 2f87f183567d2044094e26cfd9e33d12, type: 3}
+    volume: 0.5
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: CrystalKey_Pickup
+    clip: {fileID: 8300000, guid: 47527886a1434a54589ebc746f76c5f8, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Book_TurnPage
+    clip: {fileID: 8300000, guid: 4b6f631c3e5cd964197ef7df7834255a, type: 3}
+    volume: 0.7
+    volumeVariance: 0.412
+    pitch: 1
+    pitchVariance: 0.375
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Tinkling
+    clip: {fileID: 8300000, guid: 87eca7fbaf5cb05409381f858763b7ba, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PickUp
+    clip: {fileID: 8300000, guid: 8e09e912152e30148a67b0c5e236d62b, type: 3}
+    volume: 0.7
+    volumeVariance: 0.115
+    pitch: 1
+    pitchVariance: 0.16
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PutDown
+    clip: {fileID: 8300000, guid: c050374d43755794ba5951096183345e, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PickUp2
+    clip: {fileID: 8300000, guid: d1cc6b1adcf73964c89367e4602e2bd0, type: 3}
+    volume: 0.5
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Note_PutDown2
+    clip: {fileID: 8300000, guid: eaa0aae8eb64ee845b191132381bb524, type: 3}
+    volume: 0.5
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Book_TurnPage
+    clip: {fileID: 8300000, guid: 4b6f631c3e5cd964197ef7df7834255a, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Welcome
+    clip: {fileID: 8300000, guid: e98bc46076aec454a82cbcabe5f7ded4, type: 3}
+    volume: 0.6
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Door_Open
+    clip: {fileID: 8300000, guid: d2c3006b1cdf72c4c87ff6e4a35673f1, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Door_Close
+    clip: {fileID: 8300000, guid: fe84c6db61836ba4694fe26daae0abcc, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Door_Close
+    clip: {fileID: 8300000, guid: fe84c6db61836ba4694fe26daae0abcc, type: 3}
+    volume: 0.7
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}

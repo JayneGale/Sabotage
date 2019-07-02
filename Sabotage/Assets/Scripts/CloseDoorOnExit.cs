@@ -21,7 +21,7 @@ public class CloseDoorOnExit : MonoBehaviour
             doorRend.enabled = true;
             gameObject.GetComponent <MeshRenderer>().enabled=true;
 
-            AM.Play("Door_Close");
+            AM.Play("Door_Close"); //add coroutine so not overlapped
             AM.Play("Welcome");
         }    
     }
