@@ -13,9 +13,10 @@ public class Openable : MonoBehaviour
     [HideInInspector]
     public bool isLocked;
     bool isClosed;
+    bool firstCarryOn;
     public List<GameObject> unlockOnceInteracted = new List<GameObject>(); //list of gameobjects to be interacted with before the door/drawer unlocks
     Material material;
-    int listCount;
+ //   int listCount;
     AudioManager AM;
 
 
@@ -23,7 +24,8 @@ public class Openable : MonoBehaviour
     {
         isLocked = startLocked;
         isClosed = startClosed;
-        listCount = unlockOnceInteracted.Count;
+        firstCarryOn = true;
+ //       listCount = unlockOnceInteracted.Count;
         doorRend = door.GetComponent<MeshRenderer>();
         doorCol = door.GetComponent<Collider>();
         material = GetComponent<Renderer>().material;
@@ -120,7 +122,11 @@ public class Openable : MonoBehaviour
             else
             {
                 AM.Play("DoorLocked_Rattle");
-                AM.Play("TakeCarryOn");
+                if (firstCarryOn)
+                {
+                    AM.Play("TakeCarryOn");
+                    firstCarryOn = false;
+                }
             }
 
         }

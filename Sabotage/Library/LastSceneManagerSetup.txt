@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Intro.unity
+- path: Assets/_Scenes/GreyPapers.unity
   isLoaded: 1
   isActive: 1

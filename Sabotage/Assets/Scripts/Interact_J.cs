@@ -22,8 +22,7 @@ public class Interact_J : MonoBehaviour
             Debug.Log("No hand icon");
         }
         else handIcon.enabled = false;
-        //Cursor.SetCursor(handIcon, Vector2.zero, CursorMode.Auto);    
-            }
+    }
 
     // Update is called once per frame
     void Update ()
@@ -39,6 +38,7 @@ public class Interact_J : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, armDistance, interactLayer))
         {
+//            Debug.Log("Hit a " + hit.collider.tag);
             if (!isInteracting)
             {
                 handIcon.enabled = true;
@@ -46,7 +46,6 @@ public class Interact_J : MonoBehaviour
 
             if (Input.GetButtonDown(interactButtonName))
             {
-                Debug.Log("Got a hit with tag " + hit.collider.tag);
                 if (hit.collider.CompareTag("Note")|| hit.collider.CompareTag("Book"))
                 {
                     hit.collider.GetComponent<Readable_J>().PickUpReadable();

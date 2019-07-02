@@ -7,7 +7,8 @@ public class CloseDoorOnExit : MonoBehaviour
     public GameObject door;
     MeshRenderer doorRend;
     AudioManager AM;
-    // Use this for initialization
+    bool firstExit = true;
+
     void Start()
     {
         AM = FindObjectOfType <AudioManager>();
@@ -22,7 +23,12 @@ public class CloseDoorOnExit : MonoBehaviour
             gameObject.GetComponent <MeshRenderer>().enabled=true;
 
             AM.Play("Door_Close"); //add coroutine so not overlapped
-            AM.Play("Welcome");
-        }    
+            if (firstExit)
+            {
+                AM.Play("NB_Arrivals");
+                firstExit = false;
+                //AM.Play("Welcome");
+            }
+        }
     }
 }

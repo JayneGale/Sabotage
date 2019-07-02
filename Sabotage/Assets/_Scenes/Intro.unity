@@ -437,6 +437,10 @@ Prefab:
       propertyPath: sounds.Array.data[27].clip
       value: 
       objectReference: {fileID: 8300000, guid: 4ba018d47fd008540b3cb43ba724d942, type: 3}
+    - target: {fileID: 1010188074775168, guid: eb550170ba568614291cbe2a3ed907ee, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb550170ba568614291cbe2a3ed907ee, type: 2}
   m_IsPrefabAsset: 0
@@ -1331,7 +1335,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 863642849}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
