@@ -338,5 +338,3 @@ D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp.csproj.CoreCompile
 D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp.dll
 D:\Unity projects\Sabotage\Sabotage\obj\Debug\Assembly-CSharp.pdb
-D:\932400056\Documents\Git\Sabotage\Sabotage\Temp\bin\Debug\UnityEditor.UI.dll
-D:\932400056\Documents\Git\Sabotage\Sabotage\Temp\bin\Debug\UnityEditor.UI.xml

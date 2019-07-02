@@ -7,10 +7,12 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class Intro : MonoBehaviour
 {
+    public GameObject seatBelt;
     Camera fixedCamera;
     Camera playerCamera;
     GameObject player;
     FirstPersonController playerController;
+    Material SeatbeltMat;
 
     AudioSource s;
     bool talking = true;
@@ -34,13 +36,18 @@ public class Intro : MonoBehaviour
         {
             Debug.Log("No player assigned");
         }
-        Debug.Log("Disabling player controller and camera");
         playerController = player.GetComponent<FirstPersonController>();
         playerController.enabled = false;
+
         playerCamera = player.GetComponentInChildren<Camera>();
         playerCamera.enabled = false;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        SeatbeltMat = seatBelt.GetComponent<Renderer>().material;
+        SeatbeltMat.SetColor("_EmissionColor", Color.red * 0.5f);
+
         //       seatBelt.SetActive(false);
         StartCoroutine(FinishTalking());
     }
@@ -49,7 +56,6 @@ public class Intro : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            Debug.Log("Tab!");
             s.Stop();
             talking = false;
         }
@@ -69,13 +75,16 @@ public class Intro : MonoBehaviour
         fixedCamera.enabled = false;
         playerCamera.enabled = true;
         playerController.enabled = true;
- //       Cursor.lockState = CursorLockMode.Locked;
- //       Cursor.visible = false;
+        SeatbeltMat.SetColor("_EmissionColor", Color.green * 0.5f);
+
+        //       Cursor.lockState = CursorLockMode.Locked;
+        //       Cursor.visible = false;
     }
 
     IEnumerator FinishTalking()
     {
-        talking = false;
         yield return new WaitForSeconds(71);
+        talking = false;
+
     }
 }

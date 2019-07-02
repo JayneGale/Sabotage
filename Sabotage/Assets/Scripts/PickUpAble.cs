@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpAble : MonoBehaviour {
-    public Openable myDoorOrDrawer;
+ //   public Openable myDoorOrDrawer;
     AudioManager AM;
 
     void Start ()
@@ -18,7 +18,7 @@ public class PickUpAble : MonoBehaviour {
         {
             AM.Play("CrystalKey_Pickup");
             gameObject.SetActive(false);
-            myDoorOrDrawer.isLocked = false;
+  //          myDoorOrDrawer.isLocked = false;
         }
         else AM.Play("Note_PutDown2");
     }
