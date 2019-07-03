@@ -10,6 +10,7 @@ public class Openable : MonoBehaviour
     public GameObject door;
     MeshRenderer doorRend;
     Collider doorCol;
+    Animator doorAnimator;
     [HideInInspector]
     public bool isLocked;
     bool isClosed;
@@ -26,8 +27,10 @@ public class Openable : MonoBehaviour
         isClosed = startClosed;
         firstCarryOn = true;
  //       listCount = unlockOnceInteracted.Count;
-        doorRend = door.GetComponent<MeshRenderer>();
+  //      doorRend = door.GetComponent<MeshRenderer>();
         doorCol = door.GetComponent<Collider>();
+        doorAnimator = door.GetComponent<Animator>();
+
         material = GetComponent<Renderer>().material;
         if (!isLocked)
         {

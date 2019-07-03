@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpAble : MonoBehaviour {
+public class PickUpAble : MonoBehaviour
+{
  //   public Openable myDoorOrDrawer;
     AudioManager AM;
 

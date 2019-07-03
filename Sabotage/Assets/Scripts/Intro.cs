@@ -83,7 +83,7 @@ public class Intro : MonoBehaviour
 
     IEnumerator FinishTalking()
     {
-        yield return new WaitForSeconds(71);
+        yield return new WaitForSeconds(60);
         talking = false;
 
     }
