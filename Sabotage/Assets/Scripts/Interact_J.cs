@@ -48,8 +48,12 @@ public class Interact_J : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Note")|| hit.collider.CompareTag("Book"))
                 {
-                    hit.collider.GetComponent<Readable_J>().PickUpReadable();
-                    isInteracting = true;
+                    var readable = hit.collider.GetComponent<Readable_J>();
+                    if (readable != null)
+                    {
+                        readable.PickUpReadable();
+                        isInteracting = true;
+                    }
                 }
                 if (hit.collider.CompareTag("Door") || hit.collider.CompareTag("Drawer"))
                 {

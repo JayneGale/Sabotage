@@ -7,12 +7,8 @@ public class EndGameTrigger : MonoBehaviour
 
     public GameObject endGamePanel;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 
-    private void OnTriggerExit(Collider col)
+    private void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("Player"))
         {

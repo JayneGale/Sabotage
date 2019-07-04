@@ -13,7 +13,8 @@ public class Openable : MonoBehaviour
     Animator doorAnimator;
     [HideInInspector]
     public bool isLocked;
-    bool isClosed;
+    [HideInInspector]
+    public bool isClosed;
     bool firstCarryOn;
     public List<GameObject> unlockOnceInteracted = new List<GameObject>(); //list of gameobjects to be interacted with before the door/drawer unlocks
     Material material;
@@ -28,7 +29,7 @@ public class Openable : MonoBehaviour
         firstCarryOn = true;
  //       listCount = unlockOnceInteracted.Count;
  
-        doorRend = door.GetComponent<MeshRenderer>();
+ //       doorRend = door.GetComponent<MeshRenderer>();
         doorCol = door.GetComponent<Collider>();
         doorAnimator = door.GetComponent<Animator>();
 
@@ -47,12 +48,19 @@ public class Openable : MonoBehaviour
         var locked = false;
         foreach (GameObject interactable in unlockOnceInteracted)
         {
-            if (!interactable.GetComponent<Readable_J>().hasInteracted)
+            var journal = interactable.GetComponent<Readable_J>();
+ /*           if (journal = null)
+            {
+                locked = false;
+                break;
+            }
+*/
+            if (journal!=null && !journal.hasInteracted)
             {
                 locked = true;
                 break;
             }
-        }
+                    }
         if (!locked)
         {
             if (isLocked)
@@ -79,12 +87,10 @@ public class Openable : MonoBehaviour
     {
         if (!isLocked)
         {
-            isClosed = !isClosed;
-            if (isClosed)
+            if (!isClosed)
             {
                 doorAnimator.SetBool("isOpening", false);
-                doorAnimator.SetBool("isClosing", true);
-
+                isClosed = !isClosed;
                 if (CompareTag("Drawer"))
                 {
                     Debug.Log("Play drawer close animation " + name);
@@ -94,19 +100,14 @@ public class Openable : MonoBehaviour
                 {
                     Debug.Log("Play door close animation" + name);
                     AM.Play("Door_Close");
- //                   doorRend.enabled = true;
- //                   doorCol.enabled = true;
  //                   gameObject.GetComponent<MeshRenderer>().enabled = true;
-
                 }
             }
 
-            if (!isClosed)
+            else
             {
-                isClosed = !isClosed;
-                doorAnimator.SetBool("isClosing", false);
                 doorAnimator.SetBool("isOpening", true);
-
+                isClosed = !isClosed;
                 if (CompareTag("Drawer"))
                 {
                     Debug.Log("Play drawer open animation " + name);
