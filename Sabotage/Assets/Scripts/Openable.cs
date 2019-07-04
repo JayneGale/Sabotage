@@ -27,7 +27,8 @@ public class Openable : MonoBehaviour
         isClosed = startClosed;
         firstCarryOn = true;
  //       listCount = unlockOnceInteracted.Count;
-  //      doorRend = door.GetComponent<MeshRenderer>();
+ 
+        doorRend = door.GetComponent<MeshRenderer>();
         doorCol = door.GetComponent<Collider>();
         doorAnimator = door.GetComponent<Animator>();
 
@@ -81,6 +82,9 @@ public class Openable : MonoBehaviour
             isClosed = !isClosed;
             if (isClosed)
             {
+                doorAnimator.SetBool("isOpening", false);
+                doorAnimator.SetBool("isClosing", true);
+
                 if (CompareTag("Drawer"))
                 {
                     Debug.Log("Play drawer close animation " + name);
@@ -90,9 +94,9 @@ public class Openable : MonoBehaviour
                 {
                     Debug.Log("Play door close animation" + name);
                     AM.Play("Door_Close");
-                    doorRend.enabled = true;
-                    doorCol.enabled = true;
-                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+ //                   doorRend.enabled = true;
+ //                   doorCol.enabled = true;
+ //                   gameObject.GetComponent<MeshRenderer>().enabled = true;
 
                 }
             }
@@ -100,6 +104,9 @@ public class Openable : MonoBehaviour
             if (!isClosed)
             {
                 isClosed = !isClosed;
+                doorAnimator.SetBool("isClosing", false);
+                doorAnimator.SetBool("isOpening", true);
+
                 if (CompareTag("Drawer"))
                 {
                     Debug.Log("Play drawer open animation " + name);
@@ -109,9 +116,9 @@ public class Openable : MonoBehaviour
                 {
                     Debug.Log("Play door open animation " + name);
                     AM.Play("Door_Open");
-                    doorRend.enabled = false;
-                    doorCol.enabled = false;
-                    gameObject.GetComponent<MeshRenderer>().enabled = false;                  
+ //                   doorRend.enabled = false;
+ //                   doorCol.enabled = false;
+ //                   gameObject.GetComponent<MeshRenderer>().enabled = false;                  
                 }
             }
         }
